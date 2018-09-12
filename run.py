@@ -32,7 +32,8 @@ def parse_args():
 def main():
   args = parse_args()
 
-  app.run(port=args.port, debug=args.debug)
+  app.run(port=args.port, host = '0.0.0.0'  , debug=args.debug)
+
 
 
 if __name__ == "__main__":
